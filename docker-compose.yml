@@ -1,0 +1,10 @@
+services:
+  weather-api:
+    build:
+      context: .
+      target: dev
+    ports:
+      - 3000:3000
+      - 19229:9229
+    volumes:
+      - .:/usr/src/api
